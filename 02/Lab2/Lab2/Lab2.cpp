@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <objbase.h>
+#include "D:\\Study\\3k2s\\GitRep\\OS-and-SP-2019\\02\\Lab2\\ConsoleApplication1\\InterfaceH.h"
 
 using namespace std;
 
@@ -11,18 +12,6 @@ void trace(const char*msg)
 {
 	std::cout << msg << std::endl;
 }
-
-//Интерфейсы
-interface IX :IUnknown
-{
-	virtual void __stdcall Fx() = 0;
-	virtual int __stdcall Sq(int k) = 0;
-};
-
-interface IY :IUnknown
-{
-	virtual void __stdcall Fy() = 0;
-};
 
 //Предварительное объявление GUID
 extern const IID IID_IX;
@@ -36,9 +25,9 @@ class CA : public IX, public IY
 	virtual ULONG __stdcall Release() { return 0; }
 	virtual void __stdcall Fx() { std::cout << "Hi, from FX" << std::endl; };
 	virtual void __stdcall Fy() { std::cout << "Hi, from FY" << std::endl; };
-	virtual int __stdcall Sq(int k) {
-		int sq = k*k; 
-		return sq;
+	virtual int __stdcall Sqr(int k) {
+		int Sqr = k*k; 
+		return Sqr;
 	};
 };
 
@@ -109,7 +98,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		int num;
 		trace("Enter your number: ");
 		cin >> num;
-		cout << pIX->Sq(num) << endl;
+		cout << pIX->Sqr(num) << endl;
 	}
 	trace("Get a pointer to IY");
 	IY* pIY = NULL;
