@@ -1,0 +1,6 @@
+E:\Учёба\OC(2сем)\Lab1\TIme\bin\Debug\TIme.exe.config
+E:\Учёба\OC(2сем)\Lab1\TIme\bin\Debug\TIme.exe
+E:\Учёба\OC(2сем)\Lab1\TIme\bin\Debug\TIme.pdb
+E:\Учёба\OC(2сем)\Lab1\TIme\obj\Debug\TIme.csprojResolveAssemblyReference.cache
+E:\Учёба\OC(2сем)\Lab1\TIme\obj\Debug\TIme.exe
+E:\Учёба\OC(2сем)\Lab1\TIme\obj\Debug\TIme.pdb
