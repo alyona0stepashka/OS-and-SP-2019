@@ -110,6 +110,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	std::cout << "Press any key" << std::endl;
 	getchar();
-	delete pIUnknown;
+	
 	return 0;
 }
